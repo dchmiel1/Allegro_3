@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 public class ReposInfo {
 
-	private int stars;
-	private ArrayList<String> reposNames;
+	private int allStars;
+	private ArrayList<Repository> repositories;
 
-	public ReposInfo(int stars, ArrayList<String> reposNames) {
-		this.stars = stars;
-		this.reposNames = reposNames;
+	public ReposInfo(int allStars, ArrayList<Repository> repositories) {
+		this.allStars = allStars;
+		this.repositories = repositories;
 	}
-	
-	public int getStars() {
-		return stars;
+
+	public int getAllStars() {
+		return allStars;
 	}
-	
-	public ArrayList<String> getReposNames(){
-		return reposNames;
+
+	public ArrayList<Repository> getRepositories() {
+		return repositories;
 	}
 
 }

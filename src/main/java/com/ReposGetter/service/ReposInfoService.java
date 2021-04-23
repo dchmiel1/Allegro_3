@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import org.json.JSONArray;
 
 import com.ReposGetter.model.ReposInfo;
+import com.ReposGetter.model.Repository;
 
 public class ReposInfoService {
 
@@ -45,7 +46,7 @@ public class ReposInfoService {
 
 	public static ReposInfo getReposInfo(String username) {
 		int page = 1;
-		ArrayList<String> names = new ArrayList<String>();
+		ArrayList<Repository> repositories = new ArrayList<Repository>();
 		JSONArray jsonArray = null;
 		URL url;
 		int stars = 0;
@@ -58,7 +59,7 @@ public class ReposInfoService {
 				}
 				for (int i = 0; i < jsonArray.length(); i++) {
 					stars += jsonArray.getJSONObject(i).getInt("stargazers_count");
-					names.add(jsonArray.getJSONObject(i).getString("name"));
+					repositories.add(new Repository(jsonArray.getJSONObject(i).getString("name"), jsonArray.getJSONObject(i).getInt("stargazers_count")));
 				}
 				++page;
 			} catch (MalformedURLException e) {
@@ -68,6 +69,6 @@ public class ReposInfoService {
 				return null;
 			}
 		} while (jsonArray.length() != 0 || page == 200);
-		return new ReposInfo(stars, names);
+		return new ReposInfo(stars, repositories);
 	}
 }
