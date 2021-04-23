@@ -16,7 +16,7 @@ import com.ReposGetter.model.ReposInfo;
 public class ReposInfoService {
 
 	private final static String api_addr_1 = "https://api.github.com/users/";
-	private final static String api_addr_2 = "/repos?page=";
+	private final static String api_addr_2 = "/repos?per_page=100&page=";
 
 	private static String readData(Reader reader) throws IOException {
 		StringBuilder stringBuilder = new StringBuilder();

@@ -11,7 +11,7 @@ import com.ReposGetter.service.ReposInfoService;
 @RestController
 public class ReposInfoController {
 	
-	private final String info = "Type 'http://localhost:8080/{username}' to see his repositories names and amount of stars'";
+	private final String info = "Type 'http://localhost:8080/{username}' to see his repositories names and amount of stars";
 	
 	@RequestMapping("/")
 	public String getServiceInfo() {
