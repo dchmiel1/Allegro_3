@@ -17,7 +17,7 @@ mvnw spring-boot:run
 ```
 ## Korzystanie z aplikacji
 Gdy aplikacja jest uruchomiona, wystarczy otworzyć przeglądarkę internetową (lub inne narzędzie do wysyłania zapytań HTTP) i wpisać http://localhost:8080/{username}  
-,gdzie **username** to nazwa użytkownika, którego którego repozytoria chcemy otrzymać.
+,gdzie **username** to nazwa użytkownika, którego repozytoria chcemy otrzymać.
 ## Uwagi
 Aplikacja korzysta z Github REST API, które nakłada ograniczenie na liczbę pobieranych stron z danymi. Po przekroczeniu limitu należy odczekać godzinę, aby pobrać kolejne.  
 Projekt można rozszerzyć o zwracanie innych danych, tworzenie różnych rankingów czy na przykład zautomatyzowane klonowanie repozytoriów użytkownika w zależności od potrzeb.
