@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ReposGetter.model.ReposInfo;
 import com.ReposGetter.service.ReposInfoService;
 
+/**
+ * Class responsible for HTTP communication
+ * @author Daniel Chmielewiec
+ *
+ */
 @RestController
 public class ReposInfoController {
 	

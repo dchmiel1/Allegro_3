@@ -2,6 +2,11 @@ package com.ReposGetter.model;
 
 import java.util.ArrayList;
 
+/**
+ * Class, which instance is this app returning
+ * @author Daniel Chmielewiec
+ *
+ */
 public class ReposInfo {
 
 	private int allStars;

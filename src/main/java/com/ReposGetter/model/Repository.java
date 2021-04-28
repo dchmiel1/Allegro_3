@@ -1,5 +1,10 @@
 package com.ReposGetter.model;
 
+/**
+ * Single repository class
+ * @author Daniel Chmielewiec
+ *
+ */
 public class Repository {
 
 	private String name;
