@@ -58,7 +58,6 @@ public class ReposInfoService {
 			inputStream.close();
 			return new JSONArray(jsonText);
 		} catch (IOException e) {
-			System.out.println("User doesn't exist or API rate limit exceeded");
 			return null;
 		}
 	}
